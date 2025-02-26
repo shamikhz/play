@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    color:aliceblue
+
+    }
+    
+    .container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    background-color:rgb(103, 103, 188);
+}
+#playlistName{
+    font-size: 20px;
+    flex:1;
+}
+    .list {
+    height: 400px;
+    width: 100%;
+    flex: 1;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color:rgb(103, 103, 188);
+}
+
+.main {
+    flex: 2;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color:rgb(110, 110, 195);
+    text-align: center;
+}
+
+#albumArt {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+
+#genreFilter {
+   margin-left:10px;
+  width:75px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* Dark mode styles */
+body {
+    background-color: #f2f2f2;
+    color: #000;
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
